@@ -1,17 +1,20 @@
 import "./App.css";
-import Profile from "./profile/Profile";
+import Profile from "./Profile/Profile";
+
 import Image from "./aziz.jpg";
 
 function App() {
   return (
-    <div>
+    <div className="appp">
       <Profile
         imgSrc={Image}
         fullName="Aziz Allani"
         bio="****************************************** "
-        profession="Full Stack Developer"
+        profession="Student"
         Affiche={() => alert("Aziz Allani")}
-      />
+      >
+        <img src={Profile.imgSrc} alt="imaaaaaaaaaage" />
+      </Profile>
     </div>
   );
 }
